@@ -3,7 +3,7 @@
 $host = "localhost";
 $user = "root";
 $pass = "";
-$bd = "senhas";
+$bd = "compostagem";
  
 $mysqli = new mysqli($host, $user, $pass, $bd);
  

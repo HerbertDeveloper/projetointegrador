@@ -5,13 +5,13 @@ if (isset($_POST['email'])) {
     $email = $_POST['email'];
     $senha = $_POST['senha'];
 
-    $sql_code = "SELECT * FROM senhas WHERE email = '$email' LIMIT 1";
+    $sql_code = "SELECT * FROM login WHERE nome = '$email' LIMIT 1";
     // LIMIT 1 só permite rodar uma vez
     $sql_exec = $mysqli->query($sql_code) or die($mysqli->error);
 
     $usuario = $sql_exec->fetch_assoc();
 
-
+    
     
     if(empty($email)) {
         $erro = 1;
@@ -44,7 +44,7 @@ if (isset($_POST['email'])) {
     <form action="" method="post" id="modal" class="animar">
  
         <h1>Login</h1>
-        <label>E-mail</label>
+        <label>Email:</label>
         <input type="text" name="email">
         <label>Senha</label>
         <input type="text" name="senha">     

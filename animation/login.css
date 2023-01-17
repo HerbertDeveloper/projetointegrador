@@ -43,11 +43,13 @@ body{
     border: none;
     text-decoration: none;
     color: #402d00;
+    
    
   }
 
 button:hover{
     filter: brightness(.8);
+    
 }
 #logar{
    font-size: 50px;
