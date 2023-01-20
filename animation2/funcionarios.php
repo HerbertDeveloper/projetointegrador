@@ -83,7 +83,7 @@ if(count($_POST) > 0) {
             <input value="<?php if(isset($_POST['cpf'])) echo $_POST['cpf']; ?>"  name="cpf" type="text">
         </p>
         <p>
-            <button type="submit" class="log">Cadastrar cliente</button>
+            <button type="submit" class="log">Cadastrar Funcionário</button>
         </p>
     </form>
 </body>

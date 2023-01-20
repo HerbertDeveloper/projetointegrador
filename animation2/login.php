@@ -9,7 +9,7 @@ if (isset($_POST['email'])) {
     $email = $_POST['email'];
     $senha = $_POST['senha'];
 
-    $sql_code = "SELECT * FROM senhas WHERE email = '$email' LIMIT 1";
+    $sql_code = "SELECT * FROM usuario WHERE email = '$email' LIMIT 1";
     // LIMIT 1 só permite rodar uma vez
     $sql_exec = $mysqli->query($sql_code) or die($mysqli->error);
 
